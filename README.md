@@ -1,4 +1,4 @@
-#Data Visualization Dashboard
+# Data Visualization Dashboard
 
 MongoDB-backed analytics dashboard built from the provided `jsondata.json`.
 
