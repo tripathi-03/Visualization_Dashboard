@@ -1,4 +1,4 @@
-# BlackCoffer Data Visualization Dashboard
+#Data Visualization Dashboard
 
 MongoDB-backed analytics dashboard built from the provided `jsondata.json`.
 
@@ -25,7 +25,7 @@ backend/data/jsondata.json
 Run MongoDB locally using a project data directory:
 
 ```
-mongod --dbpath C:\Users\divya\OneDrive\Desktop\BlackCoffer_Assignment\mongodb-data
+mongod --dbpath C:\Users\divya\OneDrive\Desktop\Visualization_Dashboard\mongodb-data
 ```
 
 If you use a different path, update it accordingly.
