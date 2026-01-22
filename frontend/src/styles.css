@@ -1,0 +1,119 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 24px;
+}
+
+.sidebar h1 {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.content {
+  padding: 24px;
+  overflow: auto;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.filter select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+}
+
+.reset {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+}
+
+.card p {
+  margin: 0 0 8px;
+  color: #64748b;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.charts {
+  display: grid;
+  gap: 24px;
+}
+
+.chart {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.08);
+}
+
+.chart h3 {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 1024px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}

@@ -1,0 +1,7 @@
+backend/.env
+backend/node_modules/
+frontend/node_modules/
+mongodb-data/
+.DS_Store
+npm-debug.log
+yarn-error.log
